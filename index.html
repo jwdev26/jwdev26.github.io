@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --accent-main: #f59e0b;
@@ -105,6 +104,12 @@
             transform: rotate(-1.5deg);
             box-shadow: 3px 3px 0px #000;
             border: 1px solid #000;
+        }
+
+        @media (max-width: 768px) {
+            .tape-badge {
+                margin-top: 2.5rem;
+            }
         }
 
         /* Hero Image Frame with Grunge Tape */
@@ -362,13 +367,11 @@
                     <img src="images/djlogo.png" width="225" height="auto" alt="Logo" onerror="this.src='https://placehold.co/600x600/181b22/ffffff?text=JW'">
                 </div>
             </a>
-
             <div class="d-flex align-items-center gap-3 ms-auto">
                 <button class="navbar-toggler border-1 border-warning text-white p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <i class="bi bi-list fs-2 text-warning"></i>
                 </button>
             </div>
-
             <div class="collapse navbar-collapse justify-content-end mt-3 mt-md-0" id="navbarNav">
                 <ul class="navbar-nav gap-2 ms-md-4">
                     <li class="nav-item">
@@ -390,15 +393,12 @@
                     <div class="tape-badge mb-3 d-inline-flex align-items-center gap-2 px-3 py-1.5">
                         <span class="spinner-grow spinner-grow-sm text-amber" role="status" style="width: 8px; height: 8px;"></span> DRUMMER • EDUCATOR • PERFORMER
                     </div>
-
                     <h1 class="display-1 font-heading fw-bold mb-3">
                         WELCOME
                     </h1>
-
                     <p class="lead mb-4 font-normal" style="max-width: 520px; font-size: 1.15rem; line-height: 1.6; color: var(--text-body);">
                         Experienced drummer and live performer bringing relentless energy, tight timekeeping, and stage presence to every show, recording session, and workshop.
                     </p>
-
                     <div class="d-flex flex-wrap gap-3 pt-2">
                         <a href="#gallery" class="btn btn-min-primary">
                             Explore Gallery <i class="bi bi-arrow-down-right ms-1"></i>
@@ -408,7 +408,6 @@
                         </a>
                     </div>
                 </div>
-
                 <!-- Hero Photo Card -->
                 <div class="col-lg-6 d-flex justify-content-center">
                     <div class="hero-img-wrap hero-img-tilted w-100" style="max-width: 420px; height: 560px;">
@@ -430,7 +429,6 @@
     </div>
 
     <main class="flex-grow-1">
-
         <!-- SECTION 1: ABOUT -->
         <section id="about" class="biography-section py-5">
             <div class="container py-2">
@@ -442,16 +440,12 @@
                                  onerror="this.src='https://placehold.co/600x400/181b22/ffffff?text=Scarborough+Celebrates+Canada'">
                         </div>
                     </div>
-
                     <div class="col-lg-7">
                         <span class="font-handwriting text-warning d-block mb-2 fs-5" style="transform: rotate(-1deg);">// BIOGRAPHY</span>
-
                         <h2 class="display-5 font-heading fw-bold mb-3">BEHIND THE BEAT</h2>
-
                         <p class="mb-3 bio-lead" style="line-height: 1.6;">
                             I’m <strong class="text-warning fw-bold">Jeffrey Wong</strong> — a dynamic drummer focused on locking in steady timekeeping, high-energy stage execution, and elevating every band I play with.
                         </p>
-
                         <p class="mb-4 bio-text" style="line-height: 1.65;">
                             From street festivals and concert halls to acoustic lounge and wedding gigs, I focus on serving the music with dynamic control, clean phrasing, and absolute reliability.
                         </p>
@@ -471,7 +465,6 @@
                                 <div class="stat-label">ROCK / POP / LATIN</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -485,7 +478,6 @@
                         <span class="font-handwriting text-warning d-block mb-1 fs-5">// MEDIA</span>
                         <h2 class="display-5 font-heading fw-bold mb-0">PHOTOS & VIDEOS</h2>
                     </div>
-
                     <!-- Category Filters -->
                     <div class="d-flex gap-2">
                         <button onclick="filterMedia('all')" class="filter-btn-min active" id="btn-all">ALL</button>
@@ -507,7 +499,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 2: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Indoor Drum Solo', 'https://www.youtube.com/embed/1BPrmLPZv9o?si=G1o3s8x3Ii_csaXf')">
@@ -521,7 +512,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 3 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image13.jpg', 'Wedding Day', 'Full Band Live Concert')">
@@ -532,7 +522,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 4: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Outdoor Festival', 'Night Market', 'https://www.youtube.com/embed/cx3opaiRqSY?si=tAiqWSg8-IufLskZ')">
@@ -546,7 +535,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 5 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image3_canada.jpg', 'Canada Day Festival', 'Festival Mainstage')">
@@ -557,7 +545,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 6 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image11.JPG', 'Wedding Day', 'Full Band Live Concert')">
@@ -568,7 +555,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 7: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Indoor Drum Solo', 'Practice', 'https://www.youtube.com/embed/tauUEeto-RE?si=OFuXtBFSWnLwRIwL')">
@@ -582,7 +568,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 8: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Indoor Solo & Finale', 'Video shoot', 'https://www.youtube.com/embed/_BatDvFyrlg?si=0-xGSqExiVosgKET')">
@@ -596,7 +581,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 9 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image19.JPG', 'Classical Acoustic Concert', 'Acoustic Hall')">
@@ -607,7 +591,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 10 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image6_house.JPG', 'Birthday Party', 'Outdoor Patio Lounge')">
@@ -618,7 +601,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 11 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image12.JPG', 'Live show at Hutaoli', 'Full Band')">
@@ -629,7 +611,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 12 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image10_pov3.jpg', 'Live Venue Concert', 'Markham Theatre')">
@@ -640,7 +621,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 13 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image9_pov.jpg', 'Chinatown Festival', 'Mainstage Festival Crowd')">
@@ -651,7 +631,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 14 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image7_forever.jpg', 'Charity Event', 'Outdoor Live Set')">
@@ -662,7 +641,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 15: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Freestyle', 'Hong Kong', 'https://www.youtube.com/embed/1TJSrNr8xd0?si=MOW90WJwe650Ng7b')">
@@ -676,7 +654,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 16: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Band Jam', 'Rehearsal', 'https://www.youtube.com/embed/y4G4ks_-waE?si=4WsXjMePXrby09Yj')">
@@ -690,7 +667,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 17: Video -->
                     <div class="col-md-6 col-lg-4 media-item videos">
                         <div class="gallery-card" onclick="openVideoModal('Corporate Event', 'Live Band', 'https://www.youtube.com/embed/oxkTQ4dcr2k?si=cXIpGp63RbhfMvny')">
@@ -704,7 +680,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card 18 -->
                     <div class="col-md-6 col-lg-4 media-item photos">
                         <div class="gallery-card" onclick="openPhotoModal('images/image22.jpg', 'Birthday Party', 'Jeffrey Wong playing compact red TAMA drum kit outdoors.')">
@@ -715,11 +690,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- SEAMLESS DIVIDER 3: PORTFOLIO TO FOOTER -->
@@ -738,13 +711,10 @@
             </div>
             <h3 class="font-heading fw-bold fs-2 text-warning mb-1">DRUMMERJEFF</h3>
             <p class="font-handwriting text-white-50 mb-3 fs-6">// JEFFREY WONG • DRUMMER • EDUCATOR • LIVE PERFORMER</p>
-
             <div class="d-flex justify-content-center gap-4 my-4 fs-4">
                 <a href="mailto:wongjeff047@gmail.com" class="text-warning text-decoration-none" title="Email"><i class="bi bi-envelope-fill"></i></a>
             </div>
-
             <hr class="border-secondary my-4 opacity-25" style="max-width: 400px; margin: 0 auto;">
-
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-secondary small">
                 <span><i class="bi bi-geo-alt-fill text-warning me-1"></i> MARKHAM, ON, CANADA</span>
                 <span class="d-none d-md-inline">•</span>
@@ -788,7 +758,6 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         // Photo Lightbox Trigger
         function openPhotoModal(imgSrc, title, desc) {
@@ -804,15 +773,12 @@
         function openVideoModal(arg1, arg2, arg3) {
             let title = arg1;
             let videoUrl = arg2;
-
             // If 3 arguments were passed: openVideoModal(title, subtitle, videoUrl)
             if (arg3 !== undefined) {
                 title = `${arg1} • ${arg2}`;
                 videoUrl = arg3;
             }
-
             document.getElementById('modalVideoTitle').innerText = title;
-
             // Ensure URL properly formatted for autoplay
             let autoplayUrl = videoUrl;
             if (videoUrl.indexOf('autoplay=1') === -1) {
@@ -841,12 +807,10 @@
         function filterMedia(category) {
             const items = document.querySelectorAll('.media-item');
             const buttons = document.querySelectorAll('.filter-btn-min');
-
             buttons.forEach(btn => btn.classList.remove('active'));
             if (category === 'all') document.getElementById('btn-all').classList.add('active');
             if (category === 'photos') document.getElementById('btn-photos').classList.add('active');
             if (category === 'videos') document.getElementById('btn-videos').classList.add('active');
-
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
                     item.style.display = 'block';
